@@ -6,7 +6,7 @@
   "scripts": {
     "build": "echo workspace-test build",
     "prepare": "workaround-broken-npm-prepack-behavior prepack",
-    "prepack": "echo workspace-test prepack",
+    "prepack": "echo workspace-test-prepack && pwd",
     "preinstall": "echo workspace-test preinstall",
     "postinstall": "echo workspace-test postinstall"
   },
