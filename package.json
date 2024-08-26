@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo workspace-test build",
+    "prepare": "workaround-broken-npm-prepack-behavior prepack",
+    "prepack": "echo workspace-test prepack",
+    "preinstall": "echo workspace-test preinstall",
+    "postinstall": "echo workspace-test postinstall"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +16,8 @@
     "packages/a",
     "packages/b",
     "packages/z"
-  ]
+  ],
+  "devDependencies": {
+    "workaround-broken-npm-prepack-behavior": "https://github.com/cspotcode/workaround-broken-npm-prepack-behavior#59e32763ce19d087062b6ce287a21ee00d9a7187"
+  }
 }
